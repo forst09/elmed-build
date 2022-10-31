@@ -1,109 +1,109 @@
 @font-face {
     font-weight: 100;
     font-family: "UniNeue";
-    src: url("fonts/UniNeueThin.ttf");
+    src: url("../fonts/UniNeueThin.ttf");
 }
 
 @font-face {
     font-weight: 100;
     font-family: "UniNeue";
     font-style: italic;
-    src: url("fonts/UniNeueThin-Italic.ttf");
+    src: url("../fonts/UniNeueThin-Italic.ttf");
 }
 
 @font-face {
     font-weight: 200;
     font-family: "UniNeue";
-    src: url("fonts/UniNeueLight.ttf");
+    src: url("../fonts/UniNeueLight.ttf");
 }
 
 @font-face {
     font-weight: 200;
     font-family: "UniNeue";
     font-style: italic;
-    src: url("fonts/UniNeueLight-Italic.ttf");
+    src: url("../fonts/UniNeueLight-Italic.ttf");
 }
 
 @font-face {
     font-weight: 300;
     font-family: "UniNeue";
-    src: url("fonts/UniNeueBook.ttf");
+    src: url("../fonts/UniNeueBook.ttf");
 }
 
 @font-face {
     font-weight: 300;
     font-family: "UniNeue";
     font-style: italic;
-    src: url("fonts/UniNeueBook-Italic.ttf");
+    src: url("../fonts/UniNeueBook-Italic.ttf");
 }
 
 @font-face {
     font-weight: 400;
     font-family: "UniNeue";
-    src: url("fonts/UniNeueRegular.ttf");
+    src: url("../fonts/UniNeueRegular.ttf");
 }
 
 @font-face {
     font-weight: 400;
     font-family: "UniNeue";
     font-style: italic;
-    src: url("fonts/UniNeueRegular-Italic.ttf");
+    src: url("../fonts/UniNeueRegular-Italic.ttf");
 }
 
 @font-face {
     font-weight: 700;
     font-family: "UniNeue";
-    src: url("fonts/UniNeueBold.ttf");
+    src: url("../fonts/UniNeueBold.ttf");
 }
 
 @font-face {
     font-weight: 700;
     font-family: "UniNeue";
     font-style: italic;
-    src: url("fonts/UniNeueBold-Italic.ttf");
+    src: url("../fonts/UniNeueBold-Italic.ttf");
 }
 
 @font-face {
     font-weight: 800;
     font-family: "UniNeue";
-    src: url("fonts/UniNeueHeavy.ttf");
+    src: url("../fonts/UniNeueHeavy.ttf");
 }
 
 @font-face {
     font-weight: 800;
     font-family: "UniNeue";
     font-style: italic;
-    src: url("fonts/UniNeueHeavy-Italic.ttf");
+    src: url("../fonts/UniNeueHeavy-Italic.ttf");
 }
 
 @font-face {
     font-weight: 900;
     font-family: "UniNeue";
-    src: url("fonts/UniNeueBlack.ttf");
+    src: url("../fonts/UniNeueBlack.ttf");
 }
 
 @font-face {
     font-weight: 900;
     font-family: "UniNeue";
     font-style: italic;
-    src: url("fonts/UniNeueBlack-Italic.ttf");
+    src: url("../fonts/UniNeueBlack-Italic.ttf");
 }
 
 @font-face {
     font-weight: 400;
     font-family: "Garamond";
-    src: url("fonts/GaramondRegular.TTF");
+    src: url("../fonts/GaramondRegular.TTF");
 }
 
 @font-face {
     font-weight: 400;
     font-family: "Garamond";
     font-style: italic;
-    src: url("fonts/GaramondItalic.TTF");
+    src: url("../fonts/GaramondItalic.TTF");
 }
 
 @font-face {
     font-weight: 700;
     font-family: "Garamond";
-    src: url("fonts/GaramondBold.TTF");
+    src: url("../fonts/GaramondBold.TTF");
 }
