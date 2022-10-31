@@ -1484,6 +1484,66 @@ a.icon-text:focus-within svg {
 
 /* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? */
 
+/* НАЧАЛО СТИЛЕЙ БЛОКА ОПИСАНИЯ */
+.description__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.description__image {
+    width: 25.7rem;
+    height: 21.5rem;
+}
+
+.description__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.description__text-container {
+    padding: 2.4rem 1.6rem;
+    border-radius: 1.6rem;
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(23px);
+    backdrop-filter: blur(23px);
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.description__text {
+    height: 24.2rem;
+    overflow: hidden;
+    -webkit-transition: height 0.3s ease;
+    -o-transition: height 0.3s ease;
+    transition: height 0.3s ease;
+}
+
+.description__btn-show {
+    text-align: center;
+}
+
+.description__btn-show .btn-show {
+    width: auto;
+    max-width: 28.8rem;
+}
+
+.description__wrapper-blur::after {
+    width: 11.2rem;
+    height: 11.2rem;
+    background-color: var(--light-blue);
+    top: -9rem;
+    right: -1rem;
+}
+
+/* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ */
+
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ */
 
 /*НАЧАЛО ОБЩИХ СТИЛЕЙ 668*/
@@ -1846,6 +1906,42 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 668*/
+
+    /* НАЧАЛО СТИЛЕЙ БЛОКА ОПИСАНИЯ 668*/
+    .description__text-container {
+        padding: 1.2rem;
+    }
+
+    .description__wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .description__image {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-right: 0.1rem;
+    }
+
+    .description__text {
+        height: 15.4rem;
+    }
+
+    .description__btn-show {
+        margin-top: 1.2rem;
+        text-align: left;
+    }
+
+    .description__wrapper-blur::after {
+        right: -1.8rem;
+        top: 0rem;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+    }
+
+    /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 668*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 668*/
@@ -2202,6 +2298,35 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 1024*/
+
+    /* НАЧАЛО СТИЛЕЙ БЛОКА ОПИСАНИЯ 1024*/
+    .description__image {
+        width: 40.6rem;
+        height: 33.8rem;
+        margin-right: 0.8rem;
+    }
+
+    .description__text-container {
+        padding: 3.2rem;
+    }
+
+    .description__text {
+        height: 11rem;
+    }
+
+    .description__btn-show {
+        margin-top: 0.8rem;
+    }
+
+    .description__wrapper-blur::after {
+        width: 14.4rem;
+        height: 14.4rem;
+        top: unset;
+        bottom: 1rem;
+        right: 28rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 1024*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
@@ -2398,6 +2523,46 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 1500*/
+
+    /* НАЧАЛО СТИЛЕЙ БЛОКА ОПИСАНИЯ 1500*/
+    .description__image {
+        width: 46.7rem;
+        height: 38.9rem;
+    }
+
+    .description__text-container {
+        padding: 4.7rem 3.2rem;
+    }
+
+    .description__text {
+        height: 8.8rem;
+    }
+
+    .description__btn-show {
+        margin-top: 1.6rem;
+    }
+
+    .description__wrapper-blur::after {
+        bottom: 10rem;
+        right: 44rem;
+    }
+
+    .description__wrapper-blur::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        z-index: -1;
+        background-color: var(--lighter-blue);
+        width: 11.2rem;
+        height: 11.2rem;
+        left: 28rem;
+        bottom: -6rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 1500*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1500*/
