@@ -1544,6 +1544,99 @@ a.icon-text:focus-within svg {
 
 /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ */
 
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА */
+.advantages {
+    overflow-x: clip;
+}
+
+.advantages__img {
+    width: 15.8rem;
+    height: 14.9rem;
+    position: relative;
+}
+
+.advantages__img::before {
+    content: '';
+    position: absolute;
+    width: 20.3rem;
+    height: 20.3rem;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: -o-radial-gradient(50% 50%, 50% 50%, #ffffff 43.23%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #ffffff 43.23%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.advantages__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.advantages__img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 21.9rem;
+    height: 21.9rem;
+    margin: 5rem auto 0;
+    background: rgba(166, 209, 238, 0.2);
+    border-radius: 50%;
+    position: relative;
+}
+
+.advantages__img-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 25.9rem;
+    height: 25.9rem;
+    border: 0.1rem solid var(--lighter-blue);
+    border-radius: 50%;
+}
+
+.advantages__title-blur::after {
+    width: 11.2rem;
+    height: 11.2rem;
+    background-color: var(--light-blue);
+    top: -8rem;
+    right: -2rem;
+}
+
+.advantages__text-item {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    -o-transition: transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.advantages__text-item.element-show {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА */
+
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ */
 
 /*НАЧАЛО ОБЩИХ СТИЛЕЙ 668*/
@@ -1942,6 +2035,136 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 668*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 668*/
+    .advantages__img-container {
+        width: 27.5rem;
+        height: 27.5rem;
+        margin: 2.5rem auto 0;
+    }
+
+    .advantages__img-container::before {
+        width: 32.5rem;
+        height: 32.5rem;
+    }
+
+    .advantages__img {
+        width: 21.3rem;
+        height: 17.6rem;
+    }
+
+    .advantages__img::before {
+        width: 25.5rem;
+        height: 25.5rem;
+    }
+
+    .advantages__img img {
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+
+    .advantages__wrapper {
+        margin-top: 9.5rem;
+        position: relative;
+    }
+
+    .advantages__text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .advantages__text li {
+        position: absolute;
+        padding: 0;
+    }
+
+    .advantages__text-item {
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+    }
+
+    .advantages__text-item-1 {
+        top: -5.5rem;
+        right: 16.3rem;
+    }
+
+    .advantages__text-item-1::before {
+        top: 2.5rem !important;
+        left: -1.5rem !important;
+    }
+
+    .advantages__text-item-2 {
+        right: 0rem;
+        top: -1.6rem;
+        max-width: 14.5rem;
+    }
+
+    .advantages__text-item-2::before {
+        left: -3.7rem !important;
+        top: 2.9rem !important;
+    }
+
+    .advantages__text-item-3 {
+        bottom: -1.3rem;
+        right: 1.5rem;
+        max-width: 16.4rem;
+    }
+
+    .advantages__text-item-3::before {
+        left: -6.1rem !important;
+        top: 3.8rem !important;
+    }
+
+    .advantages__text-item-4 {
+        bottom: -3.25rem;
+        max-width: 15.8rem;
+        left: 0;
+    }
+
+    .advantages__text-item-4::before {
+        left: unset !important;
+        right: -7.2rem !important;
+        top: 3.5rem !important;
+    }
+
+    .advantages__text-item-5 {
+        max-width: 10.5rem;
+        top: 10.2rem;
+    }
+
+    .advantages__text-item-5::before {
+        left: unset !important;
+        right: -4rem !important;
+        top: 3rem !important;
+    }
+
+    .advantages__text-item-6 {
+        max-width: 18.4rem;
+        top: -2.6rem;
+    }
+
+    .advantages__text-item-6::before {
+        left: unset !important;
+        right: -0.7rem !important;
+        top: 2.8rem !important;
+    }
+
+    .advantages__title-blur::after {
+        width: 13.3rem;
+        height: 13.3rem;
+        top: 8rem;
+        right: -6rem;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+    }
+
+    .advantages .wrapper {
+        overflow-x: clip;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 668*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 668*/
@@ -2327,6 +2550,121 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 1024*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1024*/
+    .advantages__wrapper {
+        margin-top: 8.3rem;
+    }
+
+    .advantages__img-container {
+        width: 33rem;
+        height: 33rem;
+        margin: 0 auto;
+    }
+
+    .advantages__img-container::before {
+        width: 39.2rem;
+        height: 39.2rem;
+    }
+
+    .advantages__img {
+        width: 31.5rem;
+        height: 25.8rem;
+    }
+
+    .advantages__img::before {
+        width: 30.7rem;
+        height: 30.7rem;
+    }
+
+    .advantages__text-item-1 {
+        top: -3rem;
+        right: 24.3rem;
+    }
+
+    .advantages__text-item-1::before {
+        top: 0.8rem !important;
+        left: -3.4rem !important;
+    }
+
+    .advantages__text-item-2 {
+        right: 1.3rem;
+        top: 5.4rem;
+        max-width: 25.4rem;
+    }
+
+    .advantages__text-item-2::before {
+        left: -3.2rem !important;
+        top: 0.8rem !important;
+    }
+
+    .advantages__text-item-3 {
+        bottom: 1.9rem;
+        right: 1.8rem;
+        max-width: 28.4rem;
+    }
+
+    .advantages__text-item-3::before {
+        left: -3.3rem !important;
+        top: 0.7rem !important;
+    }
+
+    .advantages__text-item-4 {
+        bottom: 1.7rem;
+        max-width: 30.6rem;
+        left: 0;
+    }
+
+    .advantages__text-item-4::before {
+        right: -3.3rem !important;
+        top: 3rem !important;
+    }
+
+    .advantages__text-item-5 {
+        max-width: 16.3rem;
+        top: 10.2rem;
+        left: 8.8rem;
+    }
+
+    .advantages__text-item-5::before {
+        right: -3.4rem !important;
+        top: 1rem !important;
+    }
+
+    .advantages__text-item-6 {
+        max-width: 27.3rem;
+        top: -2rem;
+        left: 5.4rem;
+    }
+
+    .advantages__text-item-6::before {
+        right: -3.4rem !important;
+        top: 0.8rem !important;
+    }
+
+    .advantages__title-blur::after {
+        width: 14.6rem;
+        height: 14.6rem;
+        top: 18rem;
+        right: 6rem;
+    }
+
+    .advantages__title-blur::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        z-index: -1;
+        width: 11.2rem;
+        height: 11.2rem;
+        background-color: var(--lighter-blue);
+        left: 11rem;
+        top: -8rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1024*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
@@ -2563,6 +2901,48 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 1500*/
+
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1500*/
+    .advantages__text-item-1 {
+        right: 41rem;
+    }
+
+    .advantages__text-item-2 {
+        right: 18rem;
+    }
+
+    .advantages__text-item-3 {
+        right: 18.5rem;
+    }
+
+    .advantages__text-item-4 {
+        left: 16.5rem;
+    }
+
+    .advantages__text-item-5 {
+        left: 25.4rem;
+    }
+
+    .advantages__text-item-6 {
+        left: 22rem;
+    }
+
+    .advantages__title-blur::after {
+        top: 10rem;
+        right: 24rem;
+    }
+
+    .advantages__title-blur::before {
+        background-color: var(--light-blue);
+        top: unset;
+        bottom: -54rem;
+        left: 18rem;
+        width: 12.1rem;
+        height: 12.1rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1500*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1500*/
