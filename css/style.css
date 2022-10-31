@@ -1762,6 +1762,59 @@ a.icon-text:focus-within svg {
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ О НАС */
 
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ */
+
+.faq {
+    padding: 2.4rem 0;
+    background: rgba(166, 209, 238, 0.2);
+}
+
+.dropdown__content {
+    display: none;
+    margin-top: 1.2rem;
+}
+
+.dropdown__wrapper {
+    background-color: var(--white);
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+}
+
+.dropdown__wrapper+.dropdown__wrapper {
+    margin-top: 2.4rem;
+}
+
+.dropdown__link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dropdown__link svg {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-bottom: 0.8rem;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.dropdown__link span {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ */
+
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ */
 
 /*НАЧАЛО ОБЩИХ СТИЛЕЙ 668*/
@@ -2353,6 +2406,75 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ СЕКЦИИ О НАС 668*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 668*/
+    .faq {
+        padding: 4.8rem 0;
+    }
+
+    .dropdown__wrapper {
+        padding: 2.4rem 3.2rem;
+    }
+
+    .dropdown__link {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .dropdown__link::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url('../image/arrow-down-2px.svg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        right: 0;
+        top: 0;
+        -webkit-transition: -webkit-transform 0.3s ease;
+        transition: -webkit-transform 0.3s ease;
+        -o-transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    }
+
+    .dropdown__link.active::after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .dropdown__link svg {
+        margin: 0 1.2rem 0 0;
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .dropdown__link span {
+        text-align: left;
+        max-width: 46.8rem;
+        width: 100%;
+    }
+
+    .faq__dropdowns-blur::after {
+        width: 11.2rem;
+        height: 11.2rem;
+        background-color: var(--light-blue);
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        right: 2rem;
+        top: 5rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 668*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 668*/
@@ -2948,6 +3070,28 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ СЕКЦИИ О НАС 1024*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 1024*/
+    .faq {
+        padding: 5.2rem 0;
+    }
+
+    .faq__dropdowns {
+        max-width: 70.4rem;
+        margin: 0 auto;
+    }
+
+    .dropdown__wrapper {
+        padding: 2.4rem 4rem;
+    }
+
+    .faq__dropdowns-blur::after {
+        width: 13.3rem;
+        height: 13.3rem;
+        top: 2rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 1024*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
@@ -3280,6 +3424,29 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ СЕКЦИИ О НАС 1500*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 1500*/
+    .faq__dropdowns-blur::after {
+        top: -6rem;
+    }
+
+    .faq__dropdowns-blur::before {
+        content: '';
+        position: absolute;
+        right: 10rem;
+        bottom: 0;
+        width: 14.4rem;
+        height: 14.4rem;
+        background-color: var(--light-blue);
+        border-radius: 50%;
+        z-index: -1;
+        right: 15rem;
+        bottom: 1rem;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 1500*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1500*/
