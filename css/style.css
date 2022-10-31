@@ -957,6 +957,395 @@ a.icon-text:focus-within svg {
 
 /* КОНЕЦ СТИЛЕЙ ГЛАВНОГО ЭКРАНА */
 
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ */
+
+.free-session__wrapper {
+    background: -o-linear-gradient(left, #006DB8 0%, #0097FF 100%), rgba(255, 255, 255, 0.6);
+    background: -webkit-gradient(linear, left top, right top, from(#006DB8), to(#0097FF)), rgba(255, 255, 255, 0.6);
+    background: linear-gradient(90deg, #006DB8 0%, #0097FF 100%), rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(23px);
+    backdrop-filter: blur(23px);
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+}
+
+.free-session .title {
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.free-session__form {
+    margin-top: 2.4rem;
+}
+
+.free-session__form-choice {
+    margin-top: 2.4rem;
+}
+
+.input-choice__wrapper {
+    position: relative;
+}
+
+.air-datepicker {
+    width: 100%;
+    max-width: 25.6rem;
+}
+
+.air-datepicker.-inline- {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.8rem);
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
+    padding: 1.4rem 1.6rem 2.4rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'UniNeue';
+    z-index: 100;
+}
+
+.air-datepicker-body {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.air-datepicker--content {
+    padding: 0;
+}
+
+.input-choice__wrapper.active .input-choice {
+    background-color: var(--white);
+    color: var(--blue);
+    -webkit-box-shadow: 0 0 0 2px var(--white);
+    box-shadow: 0 0 0 2px var(--white);
+}
+
+.input-choice__wrapper.active .input-choice::-webkit-input-placeholder {
+    color: var(--blue);
+}
+
+.input-choice__wrapper.active .input-choice::-moz-placeholder {
+    color: var(--blue);
+}
+
+.input-choice__wrapper.active .input-choice:-ms-input-placeholder {
+    color: var(--blue);
+}
+
+.input-choice__wrapper.active .input-choice::-ms-input-placeholder {
+    color: var(--blue);
+}
+
+.input-choice__wrapper.active .input-choice::placeholder {
+    color: var(--blue);
+}
+
+.input-choice__wrapper.active .input-choice__icon svg {
+    stroke: var(--blue);
+}
+
+.input-choice__wrapper.active .input-choice__arrow svg {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    stroke: var(--blue);
+}
+
+.input-choice {
+    padding: 1.5rem 5.2rem;
+    color: var(--white);
+    line-height: 2.2rem;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 0px 1px var(--white);
+    box-shadow: 0px 0px 0px 1px var(--white);
+    border-radius: 0.8rem;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease, -webkit-box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, -webkit-box-shadow 0.3s ease;
+    -o-transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease, -webkit-box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.input-choice:hover {
+    -webkit-box-shadow: 0px 0px 0px 2px var(--white);
+    box-shadow: 0px 0px 0px 2px var(--white);
+}
+
+.input-choice::-webkit-input-placeholder {
+    color: var(--white);
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.input-choice::-moz-placeholder {
+    color: var(--white);
+    -moz-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.input-choice:-ms-input-placeholder {
+    color: var(--white);
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.input-choice::-ms-input-placeholder {
+    color: var(--white);
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.input-choice::placeholder {
+    color: var(--white);
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.input-choice__icon {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.input-choice__icon svg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    stroke: var(--white);
+    -webkit-transition: stroke 0.3s ease;
+    -o-transition: stroke 0.3s ease;
+    transition: stroke 0.3s ease;
+}
+
+.input-choice__arrow {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.input-choice__arrow svg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    stroke: var(--white);
+    -webkit-transition: stroke 0.3s ease, -webkit-transform 0.3s ease;
+    transition: stroke 0.3s ease, -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease, stroke 0.3s ease;
+    transition: transform 0.3s ease, stroke 0.3s ease;
+    transition: transform 0.3s ease, stroke 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.input-choice__wrapper+.input-choice__wrapper {
+    margin-top: 2.4rem;
+}
+
+.free-session__form-submit {
+    margin-top: 3.2rem;
+    text-align: center;
+}
+
+.free-session__form-submit .btn {
+    background-color: var(--white);
+    min-width: 20rem;
+}
+
+.free-session__form-container {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.air-datepicker-nav--title {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #0F2552;
+    letter-spacing: -0.254651px;
+    font-weight: 400;
+    font-family: 'UniNeue';
+}
+
+.air-datepicker-nav--action path {
+    stroke: var(--blue);
+}
+
+.time-choice__wrapper {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 0.8rem;
+    width: 100%;
+    max-width: 25.6rem;
+}
+
+.time-choice {
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    -webkit-box-shadow: 0px 8.26788px 33.0715px rgb(0 0 0 / 5%);
+    box-shadow: 0px 8.26788px 33.0715px rgb(0 0 0 / 5%);
+    padding: 2.4rem 1.6rem;
+}
+
+.time-choice__head {
+    text-align: center;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.time-choice__head span {
+    letter-spacing: -0.254651px;
+    color: var(--black-light);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+.time-choice__body {
+    margin-top: 1.2rem;
+    max-height: 20.2rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray) transparent;
+}
+
+.time-choice__body::-webkit-scrollbar {
+    width: 2px;
+}
+
+.time-choice__body::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+}
+
+.time-choice__body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+.time-choice__body-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-row-gap: 0.8rem;
+    grid-column-gap: 0.9rem;
+}
+
+.time-choice__item {
+    display: inline-block;
+    background-color: var(--gray-light);
+    border-radius: 0.3rem;
+    text-align: center;
+    padding: 0.4rem;
+    -webkit-transition: 0.3s ease background-color;
+    -o-transition: 0.3s ease background-color;
+    transition: 0.3s ease background-color;
+}
+
+.time-choice__item:hover {
+    background-color: var(--gray-blue);
+}
+
+.time-choice__item:active span,
+.time-choice__item:focus span,
+.time-choice__item:focus-within span {
+    color: var(--blue);
+}
+
+.time-choice__item span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.air-datepicker-body--day-name {
+    color: var(--blue);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 0.2rem;
+}
+
+.air-datepicker-cell {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: var(--gray-light);
+    border-radius: 0.2rem;
+    font-weight: 400;
+    padding: 0.2rem;
+}
+
+.air-datepicker-cell:not(.-disabled-) {
+    background-color: var(--gray-light);
+    color: var(--black);
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.air-datepicker-cell:not(.-disabled-):hover {
+    background-color: var(--gray-blue);
+}
+
+.air-datepicker-body--cells {
+    grid-column-gap: 0.9rem;
+    grid-row-gap: 0.8rem;
+}
+
+.air-datepicker-body--cells.-days- {
+    grid-auto-rows: unset;
+}
+
+.air-datepicker-body--day-names {
+    margin: 1.2rem 0;
+}
+
+.air-datepicker-body--day-names {
+    grid-column-gap: 0.9rem;
+}
+
+.air-datepicker-cell.-day-.-other-month-,
+.air-datepicker-cell.-year-.-other-decade- {
+    color: var(--gray);
+    background-color: unset;
+}
+
+.air-datepicker-cell.-day-.-other-month-:hover,
+.air-datepicker-cell.-year-.-other-decade-:hover {
+    background-color: unset;
+    color: var(--gray);
+}
+
+.air-datepicker-cell.-disabled- {
+    color: var(--gray);
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ */
+
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ */
 
 /*НАЧАЛО ОБЩИХ СТИЛЕЙ 668*/
@@ -1168,6 +1557,63 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ ГЛАВНОГО ЭКРАНА 668*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 668*/
+    .free-session__wrapper {
+        padding: 2.4rem;
+    }
+
+    .free-session__form-container {
+        max-width: unset;
+    }
+
+    .free-session__form-inputs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .free-session__form-inputs .input__wrapper+.input__wrapper {
+        margin: 0 0 0 4.8rem;
+    }
+
+    .free-session__form-inputs .input__wrapper {
+        width: 23.2rem;
+    }
+
+    .free-session__form-choice {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .input-choice__wrapper {
+        max-width: 20rem;
+    }
+
+    .input-choice__wrapper+.input-choice__wrapper {
+        margin: 0 0 0 4.8rem;
+    }
+
+    .air-datepicker,
+    .time-choice__wrapper {
+        width: 26.1rem;
+        max-width: unset;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 668*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 668*/
@@ -1445,6 +1891,44 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ ГЛАВНОГО ЭКРАНА 1024*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 1024*/
+    .free-session__form {
+        margin-top: 4.8rem
+    }
+
+    .free-session__wrapper {
+        padding: 3.2rem;
+    }
+
+    .free-session__form-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .free-session__form-inputs .input__wrapper {
+        width: 21.1rem;
+    }
+
+    .free-session__form-inputs .input__wrapper+.input__wrapper {
+        margin-left: 2.4rem;
+    }
+
+    .free-session__form-choice,
+    .input-choice__wrapper+.input-choice__wrapper {
+        margin: 0 0 0 2.4rem;
+    }
+
+    .input-choice__wrapper {
+        width: 19.5rem;
+    }
+
+    .free-session__form-submit {
+        grid-column: 1/-1;
+        margin-top: 4rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 1024*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
@@ -1559,6 +2043,34 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ ГЛАВНОГО ЭКРАНА 1500*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 1500*/
+    .free-session__wrapper {
+        padding: 4rem;
+    }
+
+    .free-session__form-container {
+        grid-template-columns: repeat(3, 1fr);
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .free-session__form-inputs .input__wrapper {
+        width: 23.2rem;
+    }
+
+    .input-choice__wrapper {
+        width: 20rem;
+    }
+
+    .free-session__form-submit {
+        grid-column: unset;
+        margin: 0;
+        margin-left: auto;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 1500*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1500*/

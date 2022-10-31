@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/air-datepicker.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -246,6 +247,102 @@
     </div>
     <!-- КОНЕЦ МОБИЛЬНОЕ МЕНЮ -->
 
+    <!-- БЛОК С ФОРМОЙ -->
+    <section class="free-session">
+        <div class="wrapper">
+            <div class="free-session__wrapper">
+                <div class="free-session__container">
+                    <h3 class="title title--white">Первый сеанс — бесплатно!</h3>
+                    <div class="text text--white">
+                        <p>Воспользуйтесь бесплатным сеансом и ощутите результаты на себе!</p>
+                    </div>
+                    <form action="" class="free-session__form">
+                        <div class="free-session__form-container">
+                            <div class="free-session__form-inputs">
+                                <div class="input__wrapper input__wrapper--white">
+                                    <label for="firstSessionName" class="input__label">Имя *</label>
+                                    <input type="text" required id="firstSessionName" class="input"
+                                        placeholder="Ваше имя">
+                                </div>
+                                <div class="input__wrapper input__wrapper--white">
+                                    <label for="firstSessionPhone" class="input__label">Телефон *</label>
+                                    <input type="tel" required id="firstSessionPhone" class="input input-phone"
+                                        placeholder="Ваш телефон">
+                                </div>
+                            </div>
+                            <div class="free-session__form-choice">
+                                <div class="input-choice__wrapper">
+                                    <input type="text" class="input-choice" id="firstSessionDate" placeholder="Дата"
+                                        readonly>
+                                    <label for="firstSessionDate" class="input-choice__icon">
+                                        <svg>
+                                            <use xlink:href="sprite.svg#calendar"></use>
+                                        </svg>
+                                    </label>
+                                    <label for="firstSessionDate" class="input-choice__arrow">
+                                        <svg>
+                                            <use xlink:href="sprite.svg#arrowDown"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="input-choice__wrapper">
+                                    <input type="text" class="input-choice input-choice-time" id="firstSessionTime"
+                                        placeholder="Время" readonly>
+                                    <label for="firstSessionTime" class="input-choice__icon">
+                                        <svg>
+                                            <use xlink:href="sprite.svg#clock"></use>
+                                        </svg>
+                                    </label>
+                                    <label for="firstSessionTime" class="input-choice__arrow">
+                                        <svg>
+                                            <use xlink:href="sprite.svg#arrowDown"></use>
+                                        </svg>
+                                    </label>
+                                    <div class="time-choice__wrapper hide">
+                                        <div class="time-choice">
+                                            <div class="time-choice__head">
+                                                <span>Время приема</span>
+                                            </div>
+                                            <div class="time-choice__body">
+                                                <div class="time-choice__body-wrapper">
+                                                    <a href="javascript:void(0)" class="time-choice__item">
+                                                        <span>08:00-08:30</span>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="time-choice__item">
+                                                        <span>12:00-12:30</span>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="time-choice__item">
+                                                        <span>14:00-14:30</span>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="time-choice__item">
+                                                        <span>17:00-17:30</span>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="time-choice__item">
+                                                        <span>20:00-20:30</span>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="time-choice__item">
+                                                        <span>14:00-14:30</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="free-session__form-submit">
+                                <input type="submit" id="firstSessionSubmit" class="display-none">
+                                <label for="firstSessionSubmit" class="btn">
+                                    <span>Записаться</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--КОНЕЦ БЛОК С ФОРМОЙ -->
+
     <!-- ФУТЕР -->
     <footer class="footer blur footer__blur">
         <div class="wrapper">
@@ -293,6 +390,7 @@
     <!-- КОНЕЦ ФУТЕР -->
 
     <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="js/air-datepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
