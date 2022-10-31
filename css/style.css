@@ -1416,6 +1416,74 @@ a.icon-text:focus-within svg {
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ*/
 
+/* НАЧАЛО СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? */
+.count {
+    counter-reset: count__item;
+    position: relative;
+}
+
+.how-works-blur::after {
+    width: 11.2rem;
+    height: 11.2rem;
+    background-color: var(--light-blue);
+    top: 28rem;
+    left: 7rem;
+}
+
+.count__item {
+    padding: 0 0.8rem 1.2rem;
+    border-radius: 1.6rem;
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(23px);
+    backdrop-filter: blur(23px);
+    max-width: 46.1rem;
+    width: 100%;
+}
+
+.count__item+.count__item {
+    margin-top: 2.4rem;
+}
+
+.count__item-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.count__item-text::before {
+    counter-increment: count__item;
+    content: counter(count__item);
+    font-family: 'UniNeue';
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+    font-weight: 800;
+    color: var(--white);
+    -webkit-text-stroke: 0.1rem var(--blue);
+    margin-bottom: 1.2rem;
+    display: inline-block;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.count__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? */
+
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ */
 
 /*НАЧАЛО ОБЩИХ СТИЛЕЙ 668*/
@@ -1730,6 +1798,54 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ 668*/
+
+    /* НАЧАЛО СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 668*/
+    .count__item {
+        padding: 1.6rem 3.2rem;
+        max-width: 52rem;
+    }
+
+    .count__item+.count__item {
+        margin-top: 1.6rem;
+    }
+
+    .count__item-text::before {
+        min-width: 3.2rem;
+        margin: 0 2.4rem 0 0;
+    }
+
+    .count__item-text {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .how-works-blur {
+        overflow-x: clip;
+    }
+
+    .how-works-blur::after {
+        top: 35rem;
+        left: 14rem;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+    }
+
+    .how-works-blur::before {
+        content: '';
+        position: absolute;
+        right: -0.8rem;
+        top: 12rem;
+        width: 31.8rem;
+        height: 31.3rem;
+        background-image: url('img/circle.svg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 668*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 668*/
@@ -2058,6 +2174,34 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ 1024*/
+
+    /* НАЧАЛО СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 1024*/
+    .how-works__title-blur::after {
+        width: 22.6rem;
+        height: 22.6rem;
+        background-color: var(--light-blue);
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        left: 10rem;
+        top: -11rem;
+    }
+
+    .how-works-blur::after {
+        width: 13.3rem;
+        height: 13.3rem;
+        left: unset;
+        right: 16.8rem;
+        top: 17rem;
+    }
+
+    .how-works-blur::before {
+        right: 6.9rem;
+        top: 16rem;
+        width: 34.8rem;
+        height: 34.4rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 1024*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
@@ -2236,6 +2380,24 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ 1500*/
+
+    /* НАЧАЛО СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 1500*/
+    .how-works__title-blur::after {
+        left: 23rem;
+        top: -16rem;
+    }
+
+    .how-works-blur::before {
+        right: 36rem;
+        top: 12rem;
+    }
+
+    .how-works-blur::after {
+        right: 40.8rem;
+        top: 13rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 1500*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1500*/
