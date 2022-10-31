@@ -41,7 +41,8 @@ section.background+section {
     margin-top: 2.4rem;
 }
 
-section+div {
+section+div,
+div+section {
     margin-top: 2.4rem;
 }
 
