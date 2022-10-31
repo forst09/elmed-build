@@ -2117,7 +2117,7 @@ a.icon-text:focus-within svg {
         top: 12rem;
         width: 31.8rem;
         height: 31.3rem;
-        background-image: url('img/circle.svg');
+        background-image: url('../image/circle.svg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
