@@ -1637,6 +1637,51 @@ a.icon-text:focus-within svg {
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА */
 
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? */
+.where__info-links {
+    margin: 1.6rem 0;
+}
+
+.footnote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(23px);
+    backdrop-filter: blur(23px);
+    border-radius: 1.6rem;
+}
+
+.footnote svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: var(--blue);
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 0.8rem;
+}
+
+.footnote .text b {
+    color: var(--blue);
+}
+
+.where__map {
+    margin-top: 1.6rem;
+    width: 100%;
+    height: 28.6rem;
+}
+
+.where__info-blur::after {
+    width: 11.2rem;
+    height: 11.2rem;
+    background-color: var(--light-blue);
+    bottom: -7rem;
+    left: 3rem;
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? */
+
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ */
 
 /*НАЧАЛО ОБЩИХ СТИЛЕЙ 668*/
@@ -2165,6 +2210,33 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 668*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? 668*/
+    .where__info-links {
+        margin-bottom: 2.4rem;
+    }
+
+    .footnote {
+        padding: 1.6rem 5.4rem 1.6rem 3.2rem;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .where__map {
+        margin-top: 2.4rem;
+    }
+
+    .where__info-blur::after {
+        width: 14.4rem;
+        height: 14.4rem;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        left: -10rem;
+        top: 11rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? 668*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 668*/
@@ -2665,6 +2737,63 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1024*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? 1024*/
+    .where__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .where__info {
+        max-width: 45.1rem;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footnote {
+        margin-top: auto;
+        padding: 1.6rem 3.2rem;
+    }
+
+    .where__map {
+        max-width: 46.5rem;
+        height: 27.1rem;
+        margin: 0;
+    }
+
+    .where__info-blur::after {
+        width: 12.1rem;
+        height: 12.1rem;
+        top: -11rem;
+        left: 4rem;
+    }
+
+    .where__info-blur::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        z-index: -1;
+        width: 11.2rem;
+        height: 11.2rem;
+        background-color: var(--light-blue);
+        bottom: -4rem;
+        left: 41rem;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? 1024*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
@@ -2943,6 +3072,22 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1500*/
+
+    /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? 1500*/
+    .where__info {
+        max-width: 50.1rem;
+    }
+
+    .where__map {
+        max-width: 70.4rem;
+    }
+
+    .where__info-blur::after {
+        left: 19rem;
+        top: -20rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? 1500*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1500*/
